@@ -1,0 +1,226 @@
+html {
+    margin: 0%;
+    padding: 0%;
+    background-image: linear-gradient(to right top, #ffa4fd, #ff97fb, #ff89f8, #ff7af5, #ff69f1);
+    font-size: 3vw;
+}
+
+
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 3fr 1fr 5fr 4fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    height: 100vh;
+    width: 100vw;
+}
+
+
+
+header {
+    display: grid;
+    grid-template-columns: 25vw 25vw 25vw 25%;
+    grid-template-rows: 3.5vh 3.5vh 3.5vh 3.5vh;
+    grid-template-areas: 
+    "port port . ."
+    "port port firstname firstname"
+    "port port lastname lastname";
+    justify-content: center;
+    align-items: center;
+    grid-area: 1 / 1 / 2 / 2; 
+    height: 15vw;
+    width: 100vw;
+}
+
+.image-background {
+    backdrop-filter: blur(50%);
+    grid-area: port;
+    width: 20vh;
+    padding-top: 50%;
+    }
+
+.me {
+    grid-area: port;
+    width: 11vh;
+    padding-top: 50%;
+    padding-left: 22%;
+    }
+
+.triangle {
+    filter: blur(3px);
+    stroke-width: 100;
+    stroke: url(#header-shape-gradient) #FF93D3;
+}
+  
+#header-shape-gradient {
+    --color-stop: #FF93D3;
+    --color-bot: #FFA0A6;
+    
+  }
+#first-name {
+    grid-area: firstname;
+    padding-top: 20%;
+}
+
+#second-name {
+    grid-area: lastname;
+    padding-top: 50%;
+    padding-right: 50vw;
+}
+
+.welcome-note {
+    grid-area: 2 / 1 / 3 / 2; 
+}
+
+.welcome-note p {
+padding-top: 5%;
+padding-left: 5%;
+font-size: 1rem;
+}
+
+h1 {
+font-size: 2rem;
+}
+
+
+.directory {
+display: flex;
+flex-flow: row wrap;
+}
+
+.main-nav {
+    grid-area: mainnav;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+}
+
+.main-nav>* {
+    flex: 0 0 45%;
+}
+
+#blog, #repos, #about-me, #contact, #memes, #fave-tools {
+    display: flex;
+    height: 20%;
+    width: auto;
+    background-image: linear-gradient(to right top, #ffa4fd, #ff97fb, #ff89f8, #ff7af5, #ff69f1);
+    border: 3px solid transparent;
+    border-radius: 20%;
+    font-size: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color:blue;
+    margin:1%;
+}
+
+
+.alert {
+    display: flex;
+    height: 35%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.alert h2 {
+    padding-left: 5%;
+    padding-right: 5%;
+
+    }
+    
+    .alert .alert-flag {
+        position: absolute;
+        clip: rect(1px, 1px, 1px, 1px);
+        padding: 0;
+        border:0;
+        height: 1px; 
+        width: 1px; 
+        overflow: hidden;
+        justify-content: center;
+    }
+    .alert .alert-container {
+        background-image: url(/img/popup-background.svg);
+        background-size: cover;
+        display: block;
+        pointer-events: none;
+        position: relative;
+    }
+    .alert .alert-content {
+        background-image: url(/img/popup-background.svg);
+        background-size: cover;
+        align-items: center;
+        height: 35vh;
+        padding-top: 15%;
+        font-size: 1.8rem;
+    }
+    
+    .alert .alert-flag:checked ~ .alert-close,
+    .alert .alert-flag:checked ~ .alert-content {
+        display: none;
+    }
+    .alert .alert-close {
+        display: flex;
+        pointer-events: all;
+        position: absolute;
+        top:8vh;
+        font-size: 5rem;
+        cursor: pointer;
+        left: 5vw;
+    }
+    .alert .alert-close:focus {
+        outline: 1px solid black;
+        
+    }
+    
+    #stop-icon {
+        font-size: 40px;
+        margin-right: 1rem;
+    }
+    
+@media screen and (min-width: 450px) {
+.me {
+    grid-area: port;
+    width: 16vh;
+    padding-top: 20%;
+    padding-left: 13%;
+    }
+    
+.image-background {
+    backdrop-filter: blur(50%);
+    grid-area: port;
+    width: 33vh;
+    padding-top: 22%;
+   padding-left: 3%;
+}
+
+.alert .alert-content {
+    font-size: 0.8rem;
+}
+
+#first-name {
+    padding-top: 10%;
+}
+
+#second-name {
+    padding-top: 30%;
+    padding-right: 50vw;
+}
+
+.alert {
+    height: 55%;
+}
+
+.alert .alert-close {
+    top:20vh;
+    left: 5vw;
+}

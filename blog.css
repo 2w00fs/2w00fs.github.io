@@ -1,0 +1,655 @@
+@font-face {
+    font-family: FocusFont;
+    src: url(FocusFonts/FocusSans-Focus.otf);
+  }
+
+  @font-face {
+    font-family: FocusFontExpandedBold;
+    src: url(FocusFonts/FocusSans-ExpandedBold.otf);
+  }
+html {
+    margin: 0%;
+    padding: 0%;
+    background-image: linear-gradient(to right top, #ffa4fd, #ff97fb, #ff89f8, #ff7af5, #ff69f1);
+    font-size: 2vw;
+    font-family: FocusFont;
+}
+
+@media only screen and (min-width: 1px) and (max-width: 450px) {
+header img {display: none}
+
+html {
+    margin: 0%;
+    padding: 0%;
+    background-image: linear-gradient(to right top, #ffa4fd, #ff97fb, #ff89f8, #ff7af5, #ff69f1);
+    font-size: 2vw;
+    font-family: FocusFont;
+    width: 100vw;
+}
+    
+body {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    display: flex;
+    flex-flow: row wrap;
+    flex: 0 0 90%;
+    width: 100vw;
+    justify-content: space-around;
+    padding: 0%;
+    margin: 0%;
+    background-image: linear-gradient(to right top, #ffa4fd, #ff97fb, #ff89f8, #ff7af5, #ff69f1);
+}
+
+#hamburger { /* setting up menu icon */
+        content: "";
+        place-content: center;
+        display: flex;
+        z-index: 1;
+        padding: 0%;
+        width: 100%;
+        height: 100%;
+        margin: 0%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        border: 2vw solid #ff84f7;
+        background-color: #ff84f7;
+        border-radius: 25%;
+}
+#hamburger:checked + ul {
+        visibility: visible;
+        opacity: 1;
+        transition-property: opacity;
+        transition-duration: 1s;
+        text-decoration: none;
+        color: black;
+
+}
+    
+#hamburger:before { 
+    content: "";
+    place-content: center;
+    background-image: url('img/diy.svg');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width:100%;
+    height:100%;
+    padding: 0%;
+    margin: 0%;    
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #ff84f7;
+    border: 2vw solid #ff84f7;
+    border-radius: 25%;
+    transition-property: rotate;
+    transition-duration: 1s;
+}
+
+#hamburger:checked:before { 
+    content: "";
+    place-content: center;
+    background-image: url('img/diy.svg');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #ff84f7;
+    width:100%;
+    height:100%;
+    padding: 0%;
+    margin: 0%;
+    border: 2vw solid #ff84f7;
+    border-radius: 25%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    rotate: -45deg;
+
+}
+
+
+#hamburger:checked {
+        z-index: 1;
+}
+
+li {
+            display:flex;
+            width: 100%;
+            height: 15%;
+            padding: 0%;
+            margin: 0%;
+            justify-content: center;
+            align-items: center;
+            
+}
+
+a {
+            text-decoration: none;
+            font-family: FocusFontExpandedBold;
+            font-size: 3rem;
+            text-decoration: none;
+            color: black;
+}
+
+#directory {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 0%;
+    margin: 18% 0 0 6%;
+    font-size: 1.5rem;
+    width: 15%;
+    height: 15%;
+    justify-content: center;
+    align-items: center;
+    order: -2;
+    box-sizing: border-box;
+}
+    
+
+ul {
+    visibility: hidden;
+    opacity:0;
+    display: flex;
+    position: absolute;
+    left: 10%;
+    top: 25vw;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 0 0 100%;
+    list-style-type: none;
+    width: 80%;
+    height: 50vh;
+    box-shadow: 0 0 0 80vh rgba(154, 129, 147, 0.8);
+    align-items: center;
+    padding: 0%;
+    border-radius: 5%;
+    background-image: linear-gradient(to right top, #ffa4fd, #ff97fb, #ff89f8, #ff7af5, #ff69f1);
+    transition-property: opacity, visibility;
+    transition-duration: 1s;
+    transition-delay: 0, 1s; /* need the delay so it doesnt go invisible before it fades */
+}
+
+main a {
+    font-size: 1.7rem;
+}
+header {
+    display: flex;
+    flex-flow: row wrap;
+    width: 70vw;
+    flex: 0 0 100%;
+    align-items: center;
+}
+
+header h1 {
+    display: flex;
+    width: 60%;
+    font-size: 5rem;
+    margin-left: 10%;
+    margin-bottom: 0;
+    order: -1;
+}
+
+header p {
+font-size: 2rem;
+padding-right: 0%;
+margin-left: 38%;
+}
+p {
+    white-space: pre-wrap;
+    font-size: 0.5rem;
+}
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+main>* {
+    flex: 0 0 100%;
+}
+
+article {
+    margin-top: 10%;
+    display: flex;
+    flex-flow: row wrap;
+    flex: 0 0 100%;
+    justify-content: center;
+    align-items: center; /* this with "object-fit: contain;" below is needed to scale correctly */
+    text-align: left;
+}
+#post-image {
+width: 85vw;
+object-fit: contain;
+}
+
+#blog-text {
+    font-size: 1.8rem;
+    width: 90%;
+    background-color: rgba(227, 227, 227, 0.3);
+    border-radius: 2vw;
+    border: 2vw solid rgba(164, 129, 164, 0.403);
+    padding: 1vw;
+}
+#image-attribute, article h2 {
+    width: 85%;
+}
+#image-attribute {
+    padding-left: 3%;
+}
+
+#tag {
+    padding-left:60%;
+}
+
+#sub-heading{
+    padding-right: 20%;
+    width: 50%;
+    font-size: 1.5rem;
+}
+
+#date {
+    font-size: 1rem;
+}
+article h2 {
+font-size: 4.5rem;
+margin: 2%;
+}
+
+
+}
+
+/* ADJUST FOR TABLETS  */
+@media only screen and (min-width: 451px) and (max-width: 820px) {
+    #hamburger { /* HIDE PHONE BURGER ICON */
+        visibility: hidden;
+    }
+    
+    html {
+        font-size: 3vw;
+    }
+    
+    body {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    
+    
+    /* START OF HEADER */
+    
+    /* 
+        header
+        | - h1
+        | - img
+        | - p
+        | - nav     #directory
+    */
+    
+    header {
+        display: grid;
+        grid-template-columns: 16.66vw 16.66vw 16.66vw 16.66vw 16.66vw 16.66vw;
+        grid-template-rows: 7vw 7vw 2.5vw;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        height: 24vw;
+        flex: 0 0 100%;
+        }
+        
+    header > img {
+        grid-area: 1 / 1 / 3 / 3; 
+        height: 20vw;
+        margin: 0;
+        padding-left: 3vw;
+        padding-top: -3%;
+        rotate: 10deg; 
+    }
+    
+    
+    header > h1 {
+        grid-area: 1 / 2 / 2 / 7; 
+        font-size: 1.7rem;
+        margin: 0;
+        padding: 0;
+        padding-top: 3%;
+        padding-left: 1%;
+    }
+    
+    header > p {
+        grid-area: 2 / 3 / 3 / 7;
+        font-size: 0.5rem;
+        margin: 0;
+        padding: 0;
+        padding-top: 3%;
+        padding-left: 1%;
+    }
+    
+    
+    
+     /* START OF NAVIGATION - CHILD OF HEADER
+            nav                 #directory
+            | - input           #hamburger
+            | - ul              #main-nav
+            | | - li * 6
+            | | | - a           #blog #repos #whoami #contactMe #memes #tools
+     
+     */
+    
+    #directory {
+        grid-area: 3 / 1 / 4 / 7;
+        margin: 0%;
+        padding: 0%;
+        justify-content: center;
+        width: 100%;
+    }
+    
+    ul {
+        display: flex;
+        flex-flow: row wrap;
+        flex: 20% 40% 40vw;
+        background-image: linear-gradient(to right top, #ffa4fd, #ff97fb, #ff89f8, #ff7af5, #ff69f1);
+        list-style-type: none;
+        justify-content: center;
+        margin: 0%;
+        padding: 0%;
+        align-items: center;
+    }
+    
+    li {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+        width: 30%;
+        padding: 1%;
+        border-bottom: 0.3vw solid black;
+    }
+    
+    li a {
+        font-size: 0.5rem;;
+        width: 40%;
+        text-decoration: none;
+        color: black;
+        border-right: 0.3vw solid black;
+        border-left: 0.3vw solid black;
+        text-align: center;
+    }
+    
+    
+    
+        /*  START OF BLOG POSTS */
+    
+    main { /*  id =  blog-posts     */
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+     }
+    
+     main>* {
+        flex: 1 1 100%;
+       
+    }
+        
+    article {
+        display: flex;
+        flex-wrap: wrap;
+        flex: 0 0 90%;
+        justify-content: center;
+        align-items: center; /* this with "object-fit: contain;" below is needed to scale correctly */
+        text-align: left;
+        
+    }
+        
+    article h2 {
+        order: 1;
+        font-size: 1.5rem;
+    }
+        
+    #sub-heading{
+        order: 2;
+        padding-right: 20%;
+        width: 50%;
+         font-size: 1rem;
+        margin: 0;
+    }
+        
+    #tag {
+        order: 3;
+        padding-left: 35%;
+        font-size: 0.5rem;
+    }
+        
+    #date {
+        order: 4;
+        font-size: 0.5rem;
+        width: 80%;
+        margin: 0%;
+    }
+        
+    #post-image {
+        order: 5;
+        width: 45vw;
+        object-fit: contain;
+    }
+        
+    #image-attribute {
+        order: 6;
+        padding-left: 30%;
+        font-size: 0.3rem;
+    }
+        
+    #blog-text {
+        order: 7;
+        font-size: 0.5rem;
+        line-height: 0.7rem;
+        background-color: rgba(232, 232, 232, 0.2);
+        border-radius: 5%;
+        border: 3vw solid rgba(133, 91, 133, 0.2);
+        white-space: pre-wrap;
+    }
+    
+    #image-attribute, article h2 {
+        width: 100%;
+    }
+    
+}
+
+/* ADJUST FOR LARGEST SCREENS */
+@media only screen and (min-width: 821px) {
+
+#hamburger { /* HIDE PHONE BURGER ICON */
+    visibility: hidden;
+}
+
+html {
+    font-size: 3vw;
+}
+
+body {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+
+/* START OF HEADER */
+
+/* 
+    header
+    | - h1
+    | - img
+    | - p
+    | - nav     #directory
+*/
+
+header {
+    display: grid;
+    grid-template-columns: 16.66vw 16.66vw 16.66vw 16.66vw 16.66vw 16.66vw;
+    grid-template-rows: 7vw 7vw 2.5vw;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    height: 20vw;
+    flex: 0 0 100%;
+    }
+    
+header > img {
+    grid-area: 1 / 1 / 3 / 3; 
+    height: 20vw;
+    margin: 0;
+    padding-left: 3vw;
+    padding-top: -3%;
+    rotate: 10deg; 
+}
+
+
+header > h1 {
+    grid-area: 1 / 2 / 2 / 7; 
+    font-size: 1.7rem;
+    margin: 0;
+    padding: 0;
+    padding-left:  0%;
+    padding-top: 2%;
+}
+
+header > p {
+    grid-area: 2 / 3 / 3 / 7;
+    font-size: 0.5rem;
+    margin: 0;
+    padding: 0;
+    padding-top: 3%; 
+}
+
+
+
+ /* START OF NAVIGATION - CHILD OF HEADER
+        nav                 #directory
+        | - input           #hamburger
+        | - ul              #main-nav
+        | | - li * 6
+        | | | - a           #blog #repos #whoami #contactMe #memes #tools
+ 
+ */
+
+#directory {
+    grid-area: 3 / 1 / 4 / 7;
+    margin: 0%;
+    padding: 0%;
+    justify-content: center;
+    width: 100%;
+}
+
+ul {
+    display: flex;
+    flex-flow: row wrap;
+    flex: 10% 20% 20vw;
+    background-image: linear-gradient(to right top, #ffa4fd, #ff97fb, #ff89f8, #ff7af5, #ff69f1);
+    list-style-type: none;
+    justify-content: center;
+    margin: 0%;
+    padding: 0%;
+    align-items: center;
+}
+
+li {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    width: 15%;
+}
+
+li a {
+    font-size: 0.5rem;;
+    width: 10%;
+    text-decoration: none;
+    color: black;
+}
+
+
+
+    /*  START OF BLOG POSTS */
+
+    main { /*  id =  blog-posts     */
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    main>* {
+        flex: 1 1 100%;
+    
+    }
+    
+    article {
+        display: flex;
+        flex-wrap: wrap;
+        flex: 0 0 90%;
+        justify-content: center;
+        align-items: center; /* this with "object-fit: contain;" below is needed to scale correctly */
+        text-align: left;
+    
+    }
+    
+    article h2 {
+        order: 1;
+        font-size: 1.5rem;
+    }
+    
+    #sub-heading{
+        order: 2;
+        padding-right: 20%;
+        width: 50%;
+        font-size: 1rem;
+        margin: 0;
+    }
+    
+    #tag {
+        order: 3;
+        padding-left: 35%;
+        font-size: 0.5rem;;
+    }
+    
+    #date {
+        order: 4;
+        font-size: 0.5rem;
+        width: 80%;
+        margin: 0%;
+    }
+    
+    #post-image {
+        order: 5;
+        width: 45vw;
+        object-fit: contain;
+    }
+    
+    #image-attribute {
+        order: 6;
+        padding-left: 30%;
+        font-size: 0.3rem;
+    }
+    
+    #blog-text {
+        order: 7;
+        font-size: 0.5rem;
+        line-height: 0.7rem;
+        background-color: rgba(232, 232, 232, 0.2);
+        border-radius: 5%;
+        border: 3vw solid rgba(133, 91, 133, 0.2);
+        white-space: pre-wrap;
+    }
+    #image-attribute, article h2 {
+        width: 100%;
+    }
+
+}

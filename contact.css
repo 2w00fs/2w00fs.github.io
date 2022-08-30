@@ -1,0 +1,218 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Anek+Telugu:wght@300;400;500;700&display=swap');
+@media only screen and (max-width: 450px) {
+html {
+    margin: 0%;
+    padding: 0%;
+    background-color: white;
+    font-size: 5vw;
+    background-image: url('/img/alec.jpg');
+    height: 100vh;
+    background-size: 100vw;
+    background-repeat: no-repeat;
+    background-position:bottom ;
+    background-color: white;
+    font-family: 'Anek Telugu';
+}
+
+h1{
+    padding-right: 0%;
+    margin-right:0%;
+}
+h3 {
+    font-size: 1rem;
+    width: 12%;
+    margin: 1% 0% 1% 2%;
+    text-decoration: underline;
+    background-image: linear-gradient(to right top, white, #f7f7f7, white, white);
+    border-radius: 90%;
+}
+h4 {
+    font-size: 0.8rem;
+    padding-left: 10%;
+    width: 100%;
+    margin: 1% 1% 1% 2%;
+}
+
+#contact-details {
+    display: flex;
+    flex-flow: row wrap;
+    flex: 0 0 20%;
+}
+#github {
+    margin-bottom: 0.5%;
+}
+
+#uname {
+    padding-left: 10%;
+    margin-top: 1;
+    margin-bottom: 1%;
+}
+
+h4 + a {
+padding-left: 28%;
+margin-top: 0%;
+color: rgb(236, 112, 211);
+text-decoration: none;
+}
+
+h4 + a:hover {
+    text-shadow: 2px 2px lightgrey;
+    }
+body {
+    margin: 0 0 0 5%;
+    padding: 0;
+    height: 100vh;
+    position: absolute;
+    top: 0px;
+}
+
+nav {
+    display: flex;
+    position: relative;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    margin: 10% 0 0 0;
+    padding: 0%;
+    width: 100%;
+    
+}
+ul {
+    display: flex;
+    flex-flow: row wrap;
+    list-style-type: none;
+    justify-content: space-between;
+    margin: 0%;
+    padding: 0%;
+
+}
+
+li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    width: 30%;
+    font-size: 0.7rem;
+    margin: 1%;
+    padding: auto;
+    background-color:rgba(186, 182, 182, 0.9);
+    height: 10vh;
+    box-shadow: 0 0 0 0.2vw rgba(100, 100, 100, 0.3), 0 0 0 0.5vw rgba(0, 0, 0, 0.3);
+}
+
+li:hover {
+    background-color:rgba(255, 255, 255, 0.9);
+}
+li a {
+    text-decoration: none;
+    color: black;
+}
+input { 
+    display: none;
+    visibility: hidden;
+}
+}
+@media only screen and (min-width: 450px) {
+
+html {
+    margin: 0%;
+    padding: 0%;
+    background-color: white;
+    font-size: 2.5vw;
+    font-family: 'Anek Telugu';
+}
+
+h1{
+    padding-right: 0%;
+    margin-right:0%;
+}
+h3 {
+    font-size: 2.5vw;
+    width: 12%;
+    margin: 0.5% 0% 0.5% 1%;
+    text-decoration: underline;
+    background-image: linear-gradient(to right top, white, #f7f7f7, white, white);
+    border-radius: 90%;
+}
+h4 {
+    font-size: 2vw;
+    padding-left: 5%;
+    width: 100%;
+    margin: 0% 0% 0% 1%;
+}
+
+#contact-details {
+    display: flex;
+    flex-flow: row wrap;
+    flex: 0 0 20%;
+}
+#github {
+    margin-bottom: 0.5%;
+}
+
+#uname {
+    padding-left: 5%;
+    margin-top: 0;
+    margin-bottom: 0%;
+}
+
+h4 + a {
+padding-left: 18%;
+margin-top: 0%;
+color: rgb(236, 112, 211);
+text-decoration: none;
+}
+
+h4 + a:hover {
+    text-shadow: 2px 2px lightgrey;
+    }
+body {
+    margin: 0 0 0 5%;
+    padding: 0;
+    background-image: url('/img/alec.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: white;
+    height: 100vh;
+}
+
+nav {
+    display: flex;
+    position: sticky;
+    top: 90vh;
+    margin: 0%;
+    padding: 0%;
+    justify-content: space-evenly;
+    width: 100%;
+}
+ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    margin: 0%;
+    padding: 0.2%;
+}
+
+li {
+    display: flex;
+    background-color:rgba(255, 255, 255, 0.5);
+    justify-content: center;
+    padding-left: 4%;
+    padding-right: 4%;
+}
+
+li:hover {
+    background-color:rgba(255, 255, 255, 0.9);
+}
+li a {
+    text-decoration: none;
+    color: black;
+}
+input { 
+    display: none;
+    visibility: hidden;
+}
+}
