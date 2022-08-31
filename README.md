@@ -25,27 +25,27 @@ index
 ```
 ## Screenshots
 ##### Index - Phone View
-![Index Phone View](docs/index_phone.png "Index - Phone View")
+![Index Phone View](screenshots/index_phone.png "Index - Phone View")
 ##### Index Banner Desktop
-![Index Banner Desktop View](docs/index_banner_desktop.png "Index Banner Desktop View")
+![Index Banner Desktop View](screenshots/index_banner_desktop.png "Index Banner Desktop View")
 ##### Index Desktop View
-![Index Desktop](docs/index_desktop.png "Index Desktop View")
+![Index Desktop](screenshots/index_desktop.png "Index Desktop View")
 ##### whoami Desktop View
-![whoami Desktop View](docs/whoami_desktop.png "whoami Desktop View")
+![whoami Desktop View](screenshots/whoami_desktop.png "whoami Desktop View")
 ##### whoami Phone View
-![whoami Phone View](docs/whoami_phone.png "whoami Desktop View")
+![whoami Phone View](screenshots/whoami_phone.png "whoami Desktop View")
 ##### Contact Me Desktop View
-![Contact Me Desktop View](docs/contact_me_desktop.png "Contact Me Desktop View")
+![Contact Me Desktop View](screenshots/contact_me_desktop.png "Contact Me Desktop View")
 ##### Contact Me Phone View
-![Contact Me Phone View](docs/contact_me_phone.png "Contact Me Desktop View")
+![Contact Me Phone View](screenshots/contact_me_phone.png "Contact Me Desktop View")
 ##### Blog Phone View
-![Blog Phone View](docs/blog_phone.png "Blog Phone View")
+![Blog Phone View](screenshots/blog_phone.png "Blog Phone View")
 ##### Blog Menu Phone View
-![Blog Menu Phone View](docs/blog_menu_phone.png "Blog Menu Phone View")
+![Blog Menu Phone View](screenshots/blog_menu_phone.png "Blog Menu Phone View")
 ##### Blog Tablet View
-![Blog Tablet View](docs/blog_tablet.png "Blog Menu Phone View")
+![Blog Tablet View](screenshots/blog_tablet.png "Blog Menu Phone View")
 ##### Blog Desktop View
-![Blog Desktop View](docs/blog_desktop.png "Blog Desktop View")
+![Blog Desktop View](screenshots/blog_desktop.png "Blog Desktop View")
 
 
 ## Target Audience
