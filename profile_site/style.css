@@ -149,14 +149,14 @@ nav {
         justify-content: center;
     }
     .alert .alert-container {
-        background-image: url(/img/popup-background.svg);
+        background-image: url(/profile_site/img/popup-background.svg);
         background-size: cover;
         display: block;
         pointer-events: none;
         position: relative;
     }
     .alert .alert-content {
-        background-image: url(/img/popup-background.svg);
+        background-image: url(/profile_site/img/popup-background.svg);
         background-size: cover;
         align-items: center;
         height: 35vh;

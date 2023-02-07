@@ -6,7 +6,7 @@ html {
     padding: 0%;
     background-color: white;
     font-size: 5vw;
-    background-image: url('/img/alec.jpg');
+    background-image: url('/profile_site/img/alec.jpg');
     height: 100vh;
     background-size: 100vw;
     background-repeat: no-repeat;
@@ -171,7 +171,7 @@ h4 + a:hover {
 body {
     margin: 0 0 0 5%;
     padding: 0;
-    background-image: url('/img/alec.jpg');
+    background-image: url('/profile_site/img/alec.jpg');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
